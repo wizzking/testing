@@ -1,0 +1,28 @@
+.headerIMG{height: auto; background: grey;}
+.headerIMG>img{ position: relative; width: 100%; height: auto; z-index: 0;}
+.centenHeader{    position: absolute;
+    top: 20px;
+    color: #FFF;
+    font-size: 1em;}
+.centenHeader>div>img{width: 40px;padding-left: 20px; margin-top: -5px;}
+.BorderR{border-right: 1px solid #e3e3e3;}
+.centenHeader>div>ul>li>a{color: #bec8c8; font-weight: bold; text-decoration: none;}
+.centenHeader>div>ul>li>a:hover{color: #FFF; }
+.centenHeader>div>ul>li{list-style-type: none; width: 100px; text-align: center;text-transform: uppercase;float: left;}
+.centenHeader>div>ul{margin-right: 150px;}
+.centenHeader>hr{color: #FFF;}
+.centenHeader>.row>.container{border-top: 1px solid #bec8c8; margin-top: 100px;}
+.contenidoH{    position: relative;
+    top: -550px;}
+    .contenidoH>.row{border-top: 1px solid #bec8c8;}
+ .conteTextHeader{color: #FFF; margin-top: 15%;}
+ .conteTextHeader>div>p{font-size: 20px;}
+  .conteTextHeader>div>button{border:none;    padding: 10px 20px;
+    border-radius: 2px;}
+.fullCont{margin-top: -280px;}
+.fullCont p{color: #83a7a5;}
+.titles{color: #0f5f5c; font-weight: bold;}
+.section2 p{color: #83a7a5;}
+.ti{font-weight: bold;}
+.imgCircular{border-radius: 100%; width: 450px; height: 450px;}
+.mapa{position: absolute; right:  0px; margin-top:30px;}
