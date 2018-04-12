@@ -26,3 +26,20 @@
 .ti{font-weight: bold;}
 .imgCircular{border-radius: 100%; width: 450px; height: 450px;}
 .mapa{position: absolute; right:  0px; margin-top:30px;}
+.headerAboutUs{margin-top: 15%; color: #FFF;}
+.headerAboutUs>button{
+	border:none;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+.section2AU .titles{color: #0f5f5c;}
+.section2AU p{color: #83a7a5;}
+.imgAU{width: 95%;}
+.fverdeAU{position: absolute; margin-top: 0px; width: 100%;}
+.btnAUFv{background: #49732f; padding: 10px 30px;border:none;margin-top: 30px;}
+.FinalAU{color: #83a7a5;}
+.menuAuInf>li{    list-style-type: none;
+    margin-left: -40px;
+    padding: 5px;}
+.menuAuInf>li>a{color: #83a7a5;}
+.sendAU{position: absolute;right: 40px; margin-top: -28px;}

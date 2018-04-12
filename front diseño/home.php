@@ -11,7 +11,7 @@
 <!-- ////////////////////////////////////////////////////// fin del header 				 -->
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////////////////////////////////contenido home 				-->
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/estilos.css">
 	<section class="headerIMG">
 		<img src="img/home/fondoHeaderHome.jpg" alt="banner">
 		<div class="col-xs-12 centenHeader">
@@ -156,6 +156,14 @@
 			</div>
 		</div>
 		
+	</section>
+
+	<section style="margin-top:60px;">
+		<div class="container">
+			<secction class="row">
+				
+			</secction>
+		</div>
 	</section>
 
 <!-- ////////////////////////////////////////////////////// fin del home 				 -->
