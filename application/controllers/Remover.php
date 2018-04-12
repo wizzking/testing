@@ -30,4 +30,26 @@ class Remover extends CI_Controller
         else
             echo "No Removido";
 	}
+	public function RemoverTeam()
+	{
+		$data = $this->input->post();
+		$Stat = array(
+        		'id'	=> 	$data['id'],
+        );
+		if ($this->Removers->RemoverTeams($Stat) == true)
+            echo "Removido";
+        else
+            echo "No Removido";
+	}
+	public function RemoverBest()
+	{
+		$data = $this->input->post();
+		$Stat = array(
+        		'id'	=> 	$data['id'],
+        );
+		if ($this->Removers->RemoverBests($Stat) == true)
+            echo "Removido";
+        else
+            echo "No Removido";
+	}
 }

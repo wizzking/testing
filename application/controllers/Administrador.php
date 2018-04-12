@@ -115,9 +115,10 @@ class Administrador extends CI_Controller
 	public function SaveMeetOurTeam()
 	{
       	$txtNombre = $this->input->post("txtNombre");
+		$txtPuesto = $this->input->post("txtPuesto");
 		$txtDescripcion = $this->input->post("txtDescripcion");
 
-		$config['upload_path'] = "./assets/img/img/home/";
+		$config['upload_path'] = "./assets/img/img/aboutUs/";
 		$config['allowed_types'] = "jpg|png";
 
 		$this->load->library("upload", $config);
@@ -133,8 +134,9 @@ class Administrador extends CI_Controller
 
 			$SaveData = [
 			  "nombre" => $txtNombre,
+			  "puesto" => $txtPuesto,
 			  "descripcion" => $txtDescripcion,
-			  "imagen" => $Data_icon['upload_data']['file_name'],
+			  "foto" => $Data_icon['upload_data']['file_name'],
 			  "status" => 1
 			];
 
@@ -167,7 +169,7 @@ class Administrador extends CI_Controller
 			$SaveData = [
 			  "nombre" => $txtNombre,
 			  "descripcion" => $txtDescripcion,
-			  "imagen" => $Data_icon['upload_data']['file_name'],
+			  "foto" => $Data_icon['upload_data']['file_name'],
 			  "status" => 1
 			];
 
