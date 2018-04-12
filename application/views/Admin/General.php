@@ -155,5 +155,7 @@
         </div>
     </div>
 </body>
-<!--scripts-->
+<script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js');?>"></script>
+<script src="<?php echo base_url('assets/js/LoadPlanAdm.js');?>"></script>
+<script src="<?php echo base_url('assets/js/SendData.js');?>"></script>
 </html>

@@ -67,4 +67,114 @@ class Administrador extends CI_Controller
 	    else
 	      echo "Error segundo";
 	}
+	public function SaveGeneral() //Edit Cont
+	{
+        $txtNombre = $this->input->post("txtNombre");
+	    $SaveData = [
+	      "name" => $txtNombre,
+	      "status" => 1,
+	    ];
+	    if ($this->Administradors->SaveGenerals($SaveData) == true) 
+	      echo "Exito";
+	    else
+	      echo "Error segundo";
+	}
+	public function SaveListOfMenu()
+	{
+      	$txtNombre = $this->input->post("txtNombre");
+		$txtDescripcion = $this->input->post("txtDescripcion");
+
+		$config['upload_path'] = "./assets/img/img/home/";
+		$config['allowed_types'] = "jpg|png";
+
+		$this->load->library("upload", $config);
+
+		if (!$this->upload->do_upload('fileEvidencia')) 
+		{
+			if (!empty($_FILES['fileEvidencia']['name'])) 
+			    echo $this->upload->display_errors();
+		}
+		else
+		{
+			$Data_icon = array('upload_data' => $this->upload->data());
+
+			$SaveData = [
+			  "nombre" => $txtNombre,
+			  "descripcion" => $txtDescripcion,
+			  "imagen" => $Data_icon['upload_data']['file_name'],
+			  "status" => 1
+			];
+
+			if ($this->Administradors->SaveListOfMenus($SaveData) == true) 
+				echo "Exito";
+			else
+			  echo "Error segundo";
+		}  
+	}
+	//////////////
+	public function SaveMeetOurTeam()
+	{
+      	$txtNombre = $this->input->post("txtNombre");
+		$txtDescripcion = $this->input->post("txtDescripcion");
+
+		$config['upload_path'] = "./assets/img/img/home/";
+		$config['allowed_types'] = "jpg|png";
+
+		$this->load->library("upload", $config);
+
+		if (!$this->upload->do_upload('fileEvidencia')) 
+		{
+			if (!empty($_FILES['fileEvidencia']['name'])) 
+			    echo $this->upload->display_errors();
+		}
+		else
+		{
+			$Data_icon = array('upload_data' => $this->upload->data());
+
+			$SaveData = [
+			  "nombre" => $txtNombre,
+			  "descripcion" => $txtDescripcion,
+			  "imagen" => $Data_icon['upload_data']['file_name'],
+			  "status" => 1
+			];
+
+			if ($this->Administradors->SaveMeetOurTeams($SaveData) == true) 
+				echo "Exito";
+			else
+			  echo "Error segundo";
+		}  
+	}
+	/////////
+	public function SaveBestofourfeature()
+	{
+      	$txtNombre = $this->input->post("txtNombre");
+		$txtDescripcion = $this->input->post("txtDescripcion");
+
+		$config['upload_path'] = "./assets/img/img/home/";
+		$config['allowed_types'] = "jpg|png";
+
+		$this->load->library("upload", $config);
+
+		if (!$this->upload->do_upload('fileEvidencia')) 
+		{
+			if (!empty($_FILES['fileEvidencia']['name'])) 
+			    echo $this->upload->display_errors();
+		}
+		else
+		{
+			$Data_icon = array('upload_data' => $this->upload->data());
+
+			$SaveData = [
+			  "nombre" => $txtNombre,
+			  "descripcion" => $txtDescripcion,
+			  "imagen" => $Data_icon['upload_data']['file_name'],
+			  "status" => 1
+			];
+
+			if ($this->Administradors->SaveBestofourfeatures($SaveData) == true) 
+				echo "Exito";
+			else
+			  echo "Error segundo";
+		}  
+	}
 }

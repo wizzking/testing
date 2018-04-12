@@ -99,13 +99,14 @@
 
 
             <div class="container">
-            <form id="form-create-usuario" style="padding:0px 15px;"class="form-horizontal" role="form" action="<?php base_url();?>BarraNav/SaveData" method="POST">
-            <h2>[--------------------------------------------------------------------------------------------------------------------------]</h2>
-            <p>Nuevo Seccion.</p>
+            <form id="form-create-usuario" style="padding:0px 15px;"class="form-horizontal" role="form" action="<?php base_url();?>SaveListOfMenu" method="POST">
 
             <div class="form-group">
-            <label for="txtEdad">Nombre de seccion:</label>
-            <input type="text" class="form-control" name="txtNombre" placeholder="Seccion">
+            <input type="text" class="form-control" name="txtNombre" placeholder="Nombre">
+            </div>
+
+            <div class="form-group">
+            <input type="text" class="form-control" name="txtDescripcion" placeholder="Descripcion">
             </div>
 
             <div class="form-group">
@@ -156,5 +157,7 @@
         </div>
     </div>
 </body>
-<!--scripts-->
+<script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js');?>"></script>
+<script src="<?php echo base_url('assets/js/LoadPlanAdm.js');?>"></script>
+<script src="<?php echo base_url('assets/js/SendData.js');?>"></script>
 </html>
