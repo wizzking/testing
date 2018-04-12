@@ -13,18 +13,18 @@
 <!-- //////////////////////////////////////////////////////contenido home 				-->
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/front/estilos.css');?>">
 	<section class="headerIMG">
-		<img src="<?php echo base_url('assets/img/img/home/fondoHeaderHome.jpg');?>" alt="banner">
+		<img src="<?php echo base_url('assets/img/');?>img/home/fondoHeaderHome.jpg" alt="banner">
 		<div class="col-xs-12 centenHeader">
 			<div class="col-xs-2 text-right BorderR"><strong>WAPIK</strong></div>
 			<div class="col-xs-3">
-				<img src="<?php echo base_url('assets/img/');?>img/home/cell.png" alt="cell">
-				<span id="telefonoHeader"></span>
+				<img src="<?php echo base_url('assets/img/img/home/cell.png');?>" alt="cell">
+				<span id="telefonoHeader"></span> <!--Dinamico-->
 			</div>
 			<div class="col-xs-7 text-right">
 				<ul class="pull-right">
 					<li><a href="<?php echo base_url();?>">HOME</a></li>
 					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">ABOUT US</a></li>
-					<!--<li><a href="#">pricing</a></li>-->
+					<li><a href="<?php echo base_url('index.php/Wapik/Pricing');?>">Pricing</a></li>
 					<li><a href="<?php echo base_url('index.php/Wapik/ContactUs');?>">Contact Us</a></li>
 				</ul>
 			</div>
@@ -44,58 +44,31 @@
 	<div class="container fullCont">
 		<section class="row text-center">
 			<h2 class="titles">Best of our features</h2>
-			<p class="col-xs-6 col-xs-offset-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo unde error esse nam quia porro quaerat. Quisquam mollitia adipisci vero est </p>
+			<p class="col-xs-6 col-xs-offset-3" id="Best_of_our_features">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo unde error esse nam quia porro quaerat. Quisquam mollitia adipisci vero est </p>
 		</section>
+
+
+
+
+
 
 		<section class="row" style="margin-top: 50px;">
 			<div class="container text-center">
-				<div class="col-xs-12">
-					<div class="col-xs-4">
-						<img src="<?php echo base_url('assets/img/img/home/ionic.png');?>" alt="icono">
-						<h4 class="titles">Ionicons</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus officia maiores, provident nihil, mollitia laudantium quo illum aut non ipsam blanditiis possimus, obcaecati inventore at, vel fugit dolor adipisci harum.</p>
-					</div>
-					<div class="col-xs-4">
-						<img src="<?php echo base_url('assets/img/img/home/quimica.png');?>" alt="icono">
-						<h4 class="titles">Creative Design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ducimus laborum deleniti quidem placeat consectetur consequatur reiciendis maiores quis natus illo, assumenda magni eius omnis similique atque magnam, autem reprehenderit.</p>
-					</div>
-					<div class="col-xs-4">
-						<img src="<?php echo base_url('assets/img/img/home/cuadro.png');?>" alt="icono">
-						<h4 class="titles">Photoshop and Sketch</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, asperiores earum harum culpa nemo consectetur. Maiores perspiciatis laboriosam odio veritatis, quod optio doloribus iste dolores, cumque consectetur harum, similique repudiandae!</p>
-					</div>
-				</div>
+				<div class="col-xs-12" id="CargarCont"></div> <!--Dinamico-->
 			</div>
 		</section>
 
+
+
+
+
+
+
 		<section class="row" style="margin-top: 120px;">
-			<div class="container">
-				<div class="col-xs-12">
-					<div class="row">
-						<div class="col-xs-6">
-							<img src="<?php echo base_url('assets/img/img/home/esfera.png');?>" alt="icono">
-							<strong class="titles">Cross Browser Compatibility</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptate consequatur mollitiaaesentium nulla tenetur? Nostrum, dignissimos, vitae?</p>
-						</div>
-						<div class="col-xs-6">
-							<img src="<?php echo base_url('assets/img/img/home/idea.png');?>" alt="icono">
-							<strong class="titles">Creative Idea</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam deserunt quod nostrum voluptatee illum laboriosam, ducimus, incidunt. Necessitatibus!</p>
-						</div>
-					</div>
-					<div class="row" style="margin-top:30px;">
-						<div class="col-xs-6">
-							<img src="<?php echo base_url('assets/img/img/home/pixel.png');?>" alt="icono">
-							<strong class="titles">Pixel Perfect</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex hic delectus praesentium veritatis obcaecavoluptas voluptates totam error!</p>
-						</div>
-						<div class="col-xs-6">
-							<img src="<?php echo base_url('assets/img/img/home/nuve.png');?>" alt="icono">
-							<strong class="titles">Free Forever and Ever</strong>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum laborum obcaecati iure, facilis eveniet nihil minima qui blanditiis adipisci recusandae.</p>
-						</div>
-					</div>
+			<div class="container text-center">
+				<div class="col-xs-12" id="CargarHomeCont">
+
+
 				</div>
 			</div>
 		</section>
@@ -136,13 +109,13 @@
 	<section style="margin-top:60px;">
 		<div class="container">
 			<div class="col-xs-6" >
-				<p style="color:#83a7a5; font-size: 25px; margin-top:80px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque vel eos natus provident similique aut error, rerum ipsum sit voluptate quis nisi molestiae itaque, doloremque necessitatibus voluptatum. Excepturi culpa, beatae!</p>
+				<p style="color:#83a7a5; font-size: 25px; margin-top:80px;" id="MidDescripcion"></p>
 
-				<p class="ti" style="color: #6fb048; margin-top:80px;">Valeria Boltneva</p>
-				<p class="ti" style="color: #83a7a5;">Director of Acme.Inc</p>
+				<p class="ti" style="color: #6fb048; margin-top:80px;" id="MidNombre">Valeria Boltneva</p>
+				<p class="ti" style="color: #83a7a5;" id="MidPuesto">Director of Acme.Inc</p>
 			</div>
 			<div class="col-xs-6 text-center" >
-				<img class="imgCircular" src="<?php echo base_url('assets/img/img/home/mujer.jpg');?>" alt="foto">
+				<img class="imgCircular" src="" alt="foto" id="MidImagen">
 			</div>
 		</div>
 	</section>
@@ -158,11 +131,105 @@
 		
 	</section>
 
-	<section style="margin-top:60px;">
+	<section style="margin-top:60px;" class="text-center">
+		<div class="container HblankSection">
+			<section class="row">
+				<h2 class="titles">Pricing & Plan</h2>
+				<p class="col-xs-6 col-xs-offset-3">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. Donec id elit non mi porta gravida at eget metus.
+				</p>
+			</section>
+
+			<section class="row" style="margin-top:60px;">
+				<div class="container text-center">
+					<div class="contVenta" id="CargarPlan">
+		
+
+					</div>
+				</div>
+			</section>
+
+			<section class="row" style="margin-top:100px;">
+				<div class="container">
+					<section class="row text-center">
+						<h4 class="titles">Included with all Plans</h4>
+					</section>
+					<section class="row" style="margin-top:60px;">
+						<div class="container">
+							<div class="col-xs-12 listaHomeCheck text-left" id="CargarInclude">
+
+							</div>
+						</div>
+					</section>
+
+					<section class="row" style="margin-top:60px; margin-bottom: 50px;">
+						<div class="container text-center">
+							<img src="<?php echo base_url('assets/img/img/home/help.jpg');?>" alt="help">
+							<div class="row">
+								<div class="container">
+									<p class="col-xs-6 col-xs-offset-3">Contact our Customer Support that is always ready to help you with any possible questions, problems or information.</p>
+								</div>
+							</div>
+							<p style="margin-top:20px;"><strong class="titles">support@wapik.com</strong></p>
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
+	</section>
+
+
+	<section>
+		<img src="<?php echo base_url('assets/img/img/contactUS/fblancoCU.jpg');?>" alt="bb" class="fverdeAU">
 		<div class="container">
-			<secction class="row">
-				
-			</secction>
+			<div class="col-xs-12" style="color: #FFF; margin-top:5%;">
+				<div class="col-xs-8">
+					<h3 class="titles">Do You Like Wapik? Download it Now</h3>
+					<p class="titles">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div class="col-xs-4">
+					<button class="btnAUFv">download now! - FREE forever</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="margin-top:120px;">
+		<div class="container FinalAU">
+			<div class="col-xs-3">
+				<h4 class="titles">WAPIK</h4>
+				<p id="correoFooter"></p> <!--Dinamico-->
+				<p id="telefonoFooter"></p> <!--Dinamico-->
+				<p id="direccionFooter"></p> <!--Dinamico-->
+			</div>
+			<div class="col-xs-3">
+				<h4 class="titles">Company</h4>
+				<ul class="menuAuInf">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">pricing</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-3">
+				<h4 class="titles">Others</h4>
+				<ul class="menuAuInf">
+					<li><a href="#">Help & Support</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+
+			</div>
+			<div class="col-xs-3">
+				<h4 class="titles">Newsletter</h4>
+				<p>Subscribe to our newsletter and get all the cool news</p>
+				<div>
+					<input type="text" placeholder="Enter Email" class="form-control" style="background: #eef1ec;">
+					<img src="<?php echo base_url('assets/img/img/aboutUs/send.png');?>" alt="send" class="sendAU">
+					<img src="<?php echo base_url('assets/img/img/aboutUs/social.jpg');?>" alt="social" style="margin-top:100px; float: right;">
+				</div>
+			</div>
 		</div>
 	</section>
 

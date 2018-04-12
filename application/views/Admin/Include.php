@@ -29,45 +29,46 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="#">
+                        <a href="<?php echo base_url('index.php/Administrador');?>">
                             <i class="material-icons">dashboard</i>
                             <p>Panel</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./user.html">
+                        <a href="<?php echo base_url('index.php/Administrador/General');?>">
                             <i class="material-icons">person</i>
-                            <p>User Profile</p>
+                            <p>General</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./table.html">
-                            <i class="material-icons">content_paste</i>
-                            <p>Table List</p>
+                        <a href="<?php echo base_url('index.php/Administrador/MeetOurTeam');?>">
+                            <i class="material-icons">person</i>
+                            <p>Meet Our Team</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./typography.html">
-                            <i class="material-icons">library_books</i>
-                            <p>Typography</p>
+                        <a href="<?php echo base_url('index.php/Administrador/Bestofourfeatures');?>">
+                            <i class="material-icons">person</i>
+                            <p>Best of our features</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./icons.html">
-                            <i class="material-icons">bubble_chart</i>
-                            <p>Icons</p>
+                        <a href="<?php echo base_url('index.php/Administrador/ListOfMenu');?>">
+                            <i class="material-icons">person</i>
+                            <p>List Of Menu</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="<?php echo base_url('index.php/Administrador/Plan');?>">
+                            <i class="material-icons">person</i>
+                            <p>Plan</p>
                         </a>
                     </li>
                     <li>
-                        <a href="./maps.html">
-                            <i class="material-icons">location_on</i>
-                            <p>Maps</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./notifications.html">
-                            <i class="material-icons text-gray">notifications</i>
-                            <p>Notifications</p>
+                        <a href="<?php echo base_url('index.php/Administrador/Include');?>  ">
+                            <i class="material-icons">person</i>
+                            <p>Include</p>
                         </a>
                     </li>
                 </ul>
@@ -93,13 +94,55 @@
 
 
 
-            <div class="content">
-                <div class="container-fluid">
+<div class="content">
+<div class="container-fluid">
 
 
 
-                </div>
+            <div class="container">
+            <form id="form-create-usuario" style="padding:0px 15px;"class="form-horizontal" role="form" action="<?php base_url();?>SaveInclude" method="POST">
+
+            <div class="form-group">
+            <input type="text" class="form-control" name="txtNombre" placeholder="Name of Include">
             </div>
+
+            <button type="submit" class="btn btn-primary btn-block" value="Registrar">Registrar</button>
+
+            </form>
+            </div>
+
+
+
+            <!---->
+            <div class="row">
+            <section class="content">
+            <div class="row">
+            <div class="col-xs-12">
+            <div class="box">
+            <div class="box-header">
+            <h3 class="box-title">All Include</h3>
+            </div>
+            <div class="box-body">
+            <table class="table table-hover no-margin">
+            <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            </tr>
+            </thead>
+            <tbody id="contenido_tabla"></tbody>
+            </table>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            </div>
+
+
+
+</div>
+</div>
 
 
 
@@ -111,5 +154,9 @@
         </div>
     </div>
 </body>
-<!--scripts-->
+<script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js');?>"></script>
+<script src="<?php echo base_url('assets/js/LoadIncludeAdm.js');?>"></script>
+<script src="<?php echo base_url('assets/js/SendData.js');?>"></script>
+
+
 </html>
