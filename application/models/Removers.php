@@ -27,4 +27,26 @@ class Removers extends CI_Model
 		else
 			return false;
   	}
+    public function RemoverTeams($Stat)
+    {
+        $UpdateArray = array('status' => 0);
+        $this->db->where($Stat);
+        $this->db->set($UpdateArray);
+        $this->db->update('data_team');  
+        if ($this->db->affected_rows() > 0)
+          return true;
+    else
+      return false;
+    }
+    public function RemoverBests($Stat)
+    {
+        $UpdateArray = array('status' => 0);
+        $this->db->where($Stat);
+        $this->db->set($UpdateArray);
+        $this->db->update('data_cont');  
+        if ($this->db->affected_rows() > 0)
+          return true;
+    else
+      return false;
+    }
 }
