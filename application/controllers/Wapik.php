@@ -5,6 +5,10 @@ class Wapik extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->view('Administrador');
+		$this->load->view('Home');
+	}
+	public function AboutUs()
+	{
+		$this->load->view('AboutUs');
 	}
 }
