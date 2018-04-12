@@ -43,3 +43,7 @@
     padding: 5px;}
 .menuAuInf>li>a{color: #83a7a5;}
 .sendAU{position: absolute;right: 40px; margin-top: -28px;}
+.centenHeader>div>ul>li>a.CUm:hover{color: #000; }
+.frmC{border-radius: 0px; border:1px solid #c1d3d2;}
+.puenteado>h3{color: #0f5f5c; text-transform: uppercase;}
+.puenteado{border:2.5px dashed #c1d3d2;padding: 40px;}

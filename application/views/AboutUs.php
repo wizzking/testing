@@ -18,14 +18,15 @@
 			<div class="col-xs-2 text-right BorderR"><strong>WAPIK</strong></div>
 			<div class="col-xs-3">
 				<img src="<?php echo base_url('assets/img/img/home/cell.png');?>" alt="cell">
+				<!--CARGA DINAMICA -->
 				<span>+62 202 555 0117</span>
 			</div>
 			<div class="col-xs-7 text-right">
 				<ul class="pull-right">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT US</a></li>
-					<li><a href="#">pricing</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="<?php echo base_url();?>">HOME</a></li>
+					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">ABOUT US</a></li>
+					<!--<li><a href="#">pricing</a></li>-->
+					<li><a href="<?php echo base_url('index.php/Wapik/ContactUs');?>">Contact Us</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,6 +46,12 @@
 			<p class="col-xs-6 col-xs-offset-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo unde error esse nam quia porro quaerat. Quisquam mollitia adipisci vero est </p>
 		</section>
 
+
+
+
+
+
+		<!--CARGA DINAMICA -->
 		<section class="row" style="margin-top: 50px;">
 			<div class="container text-center">
 				<div class="col-xs-12">
@@ -75,6 +82,12 @@
 					<p class="col-xs-6 col-xs-offset-3">Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				</section>
 
+
+
+
+
+
+				<!--CARGA DINAMICA -->
 				<section class="row" style="margin-top:60px;">
 					<div class="container">
 						<div class="col-xs-12">
@@ -117,6 +130,7 @@
 
 	<section style="margin-top:120px;">
 		<div class="container FinalAU">
+			<!--CARGA DINAMICA -->
 			<div class="col-xs-3">
 				<h4 class="titles">WAPIK</h4>
 				<p>@: hi@wapik.com</p>
@@ -161,3 +175,5 @@
 </html>
 <!-- ////////////////////////////////////////////////////// fin del footer 				 -->
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/LoadDataAboutUs.js');?>"></script>

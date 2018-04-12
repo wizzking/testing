@@ -18,14 +18,14 @@
 			<div class="col-xs-2 text-right BorderR"><strong>WAPIK</strong></div>
 			<div class="col-xs-3">
 				<img src="<?php echo base_url('assets/img/');?>img/home/cell.png" alt="cell">
-				<span>+62 202 555 0117</span>
+				<span id="telefonoHeader"></span>
 			</div>
 			<div class="col-xs-7 text-right">
 				<ul class="pull-right">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT US</a></li>
-					<li><a href="#">pricing</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="<?php echo base_url();?>">HOME</a></li>
+					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">ABOUT US</a></li>
+					<!--<li><a href="#">pricing</a></li>-->
+					<li><a href="<?php echo base_url('index.php/Wapik/ContactUs');?>">Contact Us</a></li>
 				</ul>
 			</div>
 		</div>
@@ -173,3 +173,5 @@
 </html>
 <!-- ////////////////////////////////////////////////////// fin del footer 				 -->
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/LoadDataHome.js');?>"></script>
