@@ -1,46 +1,72 @@
-var base_url = 'http://localhost/ManyRestaurant/index.php/Restaurant/';
+var base_url = 'http://localhost/testing/index.php/';
 $(document).ready(function(){
-  /*LoadData();*/
-  alert('asd');
-    
+  LoadDataGeneral();
+  LoadDataCont();
+  LoadDataTeam();
 });
-/*
-function LoadData() 
+
+function LoadDataGeneral() 
 {
-  $.post(base_url+'Chef/LoadData',
+  $.post(base_url+'Wapik/LoadDataGeneral',
       {},
       function (data)
       {
         var c = JSON.parse(data);
         $.each(c,function(i,item)
         {
-            $('#DataChef').text('Chef: '+ item.nombre);
-            $('#DataDescription').text(item.descripcion);
-            $("#DataImageChef").attr("src",'../../assets/uploads/chefs/'+item.foto+'');
+            $('#telefonoHeader').text(item.telefono);
 
-            $('#ContainerChef').append('<div class="menu-gallery chef1">'
-                        +'<img src="../../assets/sources/img/'+item.foto+'">'
-                        +'<div class="menu-desc ">'
-                        +'<h5><b><center><a onclick="ChangePic('+item.id+')">'+item.nombre+'</a></center></b></h5>'
-                        +'</div>'
-                    +'</div>');
+            $('#correoFooter').text('@: '+item.correo);
+            $('#telefonoFooter').text('p: '+item.telefono);
+            $('#direccionFooter').text('a: '+item.direccion);
+
+            $('#correoMid').text(item.correo);
+            $('#telefonoMid').text(item.telefono);
+            $('#direccionMid').text(item.direccion);
+
+
+            $('#Get_In_Touch_With_Us').text(item.Get_In_Touch_With_Us);
         });
      });
 }
-function ChangePic(data) 
+
+
+function LoadDataCont() 
 {
-    $.post(base_url+'Chef/LoadDataSpecific',
-      {
-        'data': data
-      },
+  $.post(base_url+'Wapik/LoadDataCont',
+      {},
       function (data)
       {
         var c = JSON.parse(data);
         $.each(c,function(i,item)
         {
-            $('#DataChef').text('Chef: '+ item.nombre);
-            $('#DataDescription').text(item.descripcion);
-            $("#DataImageChef").attr("src",'../../assets/uploads/chefs/'+item.foto+'');
+            $('#CargarCont').append('<div class="col-xs-4">'
+            +'<img src="../../assets/img/img/home/'+item.foto+'" alt="icono">'
+            +'<h4 class="titles">'+item.nombre+'</h4>'
+            +'<p>'+item.descripcion+'</p>'
+          +'</div>');
+
         });
      });
-}*/
+}
+
+
+function LoadDataTeam() 
+{
+  $.post(base_url+'Wapik/LoadDataTeam',
+      {},
+      function (data)
+      {
+        var c = JSON.parse(data);
+        $.each(c,function(i,item)
+        {
+            $('#CargarTeam').append('<div class="col-xs-4">'
+                +'<img src="../../assets/img/img/aboutUs/'+item.foto+'" alt="picture" class="imgAU">'
+                +'<p class="titles">'+item.nombre+'</p>'
+                +'<p>'+item.puesto+'</p>'
+              +'</div>');
+
+
+        });
+     });
+}

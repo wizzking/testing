@@ -17,13 +17,13 @@
 			<div class="col-xs-2 text-right BorderR"><strong class="titles">WAPIK</strong></div>
 			<div class="col-xs-3">
 				<img src="<?php echo base_url('assets/img/img/contactUS/cell.png');?>" alt="cell">
-				<span class="titles">+62 202 555 0117</span>
+				<span class="titles" id="telefonoHeader"></span>
 			</div>
 			<div class="col-xs-7 text-right">
 				<ul class="pull-right">
 					<li><a href="<?php echo base_url();?>">HOME</a></li>
-					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">ABOUT US</a></li>
-					<!--<li><a href="#">pricing</a></li>-->
+					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">About Us</a></li>
+					<li><a href="<?php echo base_url('index.php/Wapik/Pricing');?>">Pricing</a></li>
 					<li><a href="<?php echo base_url('index.php/Wapik/ContactUs');?>">Contact Us</a></li>
 				</ul>
 			</div>
@@ -36,7 +36,7 @@
 
 	<section style="margin-top:80px;" class="text-center">
 		<h2 class="titles">Get In Touch With Us</h2>
-		<p>We are here to help. Want to learn more about our services? Please get in touch, we'd love to hear from you!</p>
+		<p id="Get_In_Touch_With_Us"></p>
 	</section>
 
 	<section style="margin-top:80px; margin-bottom:100px;">
@@ -55,13 +55,13 @@
 					<div class="puenteado">
 						<h3>Headquarter</h3>
 						<p style="color: #83a7a5;"><img src="<?php echo base_url('assets/img/img/contactUS/location.png');?>" alt="icon">
-							610 Overlook Circle Suite 323 Kalamazoo, MI 49009
+						<p id="direccionMid"></p>
 						</p>
 						<p style="color: #83a7a5;"><img src="<?php echo base_url('assets/img/img/contactUS/cellv.png');?>" alt="icon">
-							+62 202 555 0117
+						<p id="telefonoMid"></p>
 						</p>
 						<p style="color: #0f5f5c;"><img src="<?php echo base_url('assets/img/img/contactUS/msg.png');?>" alt="icon">
-							hi@wapik.com
+						<p id="correoMid"></p>
 						</p>
 					</div>
 				</div>
@@ -92,9 +92,9 @@
 			<!--CARGA DINAMICA -->
 			<div class="col-xs-3">
 				<h4 class="titles">WAPIK</h4>
-				<p>@: hi@wapik.com</p>
-				<p>p: +62 202 555 0117</p>
-				<p>a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</p>
+				<p id="correoFooter"></p>
+				<p id="telefonoFooter"></p>
+				<p id="direccionFooter"></p>
 			</div>
 			<div class="col-xs-3">
 				<h4 class="titles">Company</h4>

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About US</title>
+	<title>Home</title>
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/front/bootstrap.min.css');?>">
 </head>
 <body>
@@ -13,18 +13,17 @@
 <!-- //////////////////////////////////////////////////////contenido home 				-->
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/front/estilos.css');?>">
 	<section class="headerIMG">
-		<img src="<?php echo base_url('assets/img/img/home/fondoHeaderHome.jpg');?>" alt="banner">
+		<img src="<?php echo base_url('assets/img/');?>img/home/fondoHeaderHome.jpg" alt="banner">
 		<div class="col-xs-12 centenHeader">
 			<div class="col-xs-2 text-right BorderR"><strong>WAPIK</strong></div>
 			<div class="col-xs-3">
 				<img src="<?php echo base_url('assets/img/img/home/cell.png');?>" alt="cell">
-				<!--CARGA DINAMICA -->
-				<span id="telefonoHeader"></span>
+				<span id="telefonoHeader"></span> <!--Dinamico-->
 			</div>
 			<div class="col-xs-7 text-right">
 				<ul class="pull-right">
 					<li><a href="<?php echo base_url();?>">HOME</a></li>
-					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">About Us</a></li>
+					<li><a href="<?php echo base_url('index.php/Wapik/AboutUs');?>">ABOUT US</a></li>
 					<li><a href="<?php echo base_url('index.php/Wapik/Pricing');?>">Pricing</a></li>
 					<li><a href="<?php echo base_url('index.php/Wapik/ContactUs');?>">Contact Us</a></li>
 				</ul>
@@ -33,68 +32,73 @@
 	</section>
 	<div class="container contenidoH">
 		<section class="row">
-			<div class="text-center headerAboutUs">
-				<h1>Cras justo odio, dapibus ac facilisis in</h1>
-				<h1>egestas eget quam</h1>
-				<button class="btn-success">Start Your Free Trial</button>
-			</div>
-		</section>
-	</div>
-	<div class="container fullCont">
-		<section class="row text-center">
-			<h2 class="titles">Best of our features</h2>
-			<p class="col-xs-6 col-xs-offset-3" id="Best_of_our_features"></p>
-		</section>
-
-
-
-
-
-
-		<!--CARGA DINAMICA -->
-		<section class="row" style="margin-top: 50px;">
-			<div class="container text-center">
-				<div class="col-xs-12" id="CargarCont">
-					
-				
+			<div class="conteTextHeader">
+				<h1>Welcome to Wapik</h1>
+				<div class="row">
+					<p class="col-xs-5">Wapik is multipurpose template, with modern and smart design. W</p>
 				</div>
+				<div class="row" style="margin-left:0px;"><button class="btn-success">LEARN MORE</button></div>
 			</div>
 		</section>
 	</div>
 
-	<section style="margin-top: 120px; background: #eef1ec; padding-bottom:100px;">
-			<div class="container section2AU">
-				<section class="row text-center" style="margin-top:30px;">
-					<h2 class="titles">Meet Our Team</h2>
-					<p class="col-xs-6 col-xs-offset-3" id="Meet_Our_Team"></p>
-				</section>
 
 
 
 
 
 
-				<!--CARGA DINAMICA -->
-				<section class="row" style="margin-top:60px;">
-					<div class="container">
-						<div class="col-xs-12" id="CargarTeam">
-				
-					
-				
-						</div>
+
+	<section style="margin-top:60px;" class="text-center">
+		<div class="container HblankSection">
+
+
+			<section class="row" style="margin-top:60px;">
+				<div class="container text-center">
+					<div class="contVenta" id="CargarPlan">
+		
+
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
+
+			<section class="row" style="margin-top:100px;">
+				<div class="container">
+					<section class="row text-center">
+						<h4 class="titles">Included with all Plans</h4>
+					</section>
+					<section class="row" style="margin-top:60px;">
+						<div class="container">
+							<div class="col-xs-12 listaHomeCheck text-left" id="CargarInclude">
+
+							</div>
+						</div>
+					</section>
+
+					<section class="row" style="margin-top:60px; margin-bottom: 50px;">
+						<div class="container text-center">
+							<img src="<?php echo base_url('assets/img/img/home/help.jpg');?>" alt="help">
+							<div class="row">
+								<div class="container">
+									<p class="col-xs-6 col-xs-offset-3">Contact our Customer Support that is always ready to help you with any possible questions, problems or information.</p>
+								</div>
+							</div>
+							<p style="margin-top:20px;"><strong class="titles">support@wapik.com</strong></p>
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
 	</section>
 
 
 	<section>
-		<img src="<?php echo base_url('assets/img/img/aboutUs/fverdeAU.jpg');?>" alt="bb" class="fverdeAU">
+		<img src="<?php echo base_url('assets/img/img/contactUS/fblancoCU.jpg');?>" alt="bb" class="fverdeAU">
 		<div class="container">
 			<div class="col-xs-12" style="color: #FFF; margin-top:5%;">
 				<div class="col-xs-8">
-					<h3>Do You Like Wapik? Download it Now</h3>
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					<h3 class="titles">Do You Like Wapik? Download it Now</h3>
+					<p class="titles">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
 				</div>
 				<div class="col-xs-4">
 					<button class="btnAUFv">download now! - FREE forever</button>
@@ -105,12 +109,11 @@
 
 	<section style="margin-top:120px;">
 		<div class="container FinalAU">
-			<!--CARGA DINAMICA -->
 			<div class="col-xs-3">
 				<h4 class="titles">WAPIK</h4>
-				<p id="correoFooter"></p>
-				<p id="telefonoFooter"></p>
-				<p id="direccionFooter"></p>
+				<p id="correoFooter"></p> <!--Dinamico-->
+				<p id="telefonoFooter"></p> <!--Dinamico-->
+				<p id="direccionFooter"></p> <!--Dinamico-->
 			</div>
 			<div class="col-xs-3">
 				<h4 class="titles">Company</h4>
@@ -151,4 +154,4 @@
 <!-- ////////////////////////////////////////////////////// fin del footer 				 -->
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
 <script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
-<script src="<?= base_url('assets/js/LoadDataAboutUs.js');?>"></script>
+<script src="<?= base_url('assets/js/LoadDataHome.js');?>"></script>
