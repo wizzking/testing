@@ -158,11 +158,150 @@
 		
 	</section>
 
-	<section style="margin-top:60px;">
+	<section style="margin-top:60px;" class="text-center">
+		<div class="container HblankSection">
+			<section class="row">
+				<h2 class="titles">Pricing & Plan</h2>
+				<p class="col-xs-6 col-xs-offset-3">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. Donec id elit non mi porta gravida at eget metus.
+				</p>
+			</section>
+
+			<section class="row" style="margin-top:60px;">
+				<div class="container text-center">
+					<div class="contVenta">
+						<div class="venta" >
+							<h4>BASIC</h4>
+							<p class="precio">$123</p>
+							<p class="titles" style="margin-top:-10px;">/month</p>
+							<p></p>
+						</div>
+						<div class="venta">
+							<h4>PLUS</h4>
+							<p class="precio">$123</p>
+							<p class="titles" style="margin-top:-10px;">/month</p>
+							<p></p>
+						</div>
+						<div class="venta" >
+							<h4>PREMIUM</h4>
+							<p class="precio">$123</p>
+							<p class="titles" style="margin-top:-10px;">/month</p>
+							<p>Justo Fringilla <br>Mollis Sit Nullam <br>Ultricies Purus Amet <br>Cras Inceptos</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="row" style="margin-top:100px;">
+				<div class="container">
+					<section class="row text-center">
+						<h4 class="titles">Included with all Plans</h4>
+					</section>
+					<section class="row" style="margin-top:60px;">
+						<div class="container">
+							<div class="col-xs-12 listaHomeCheck text-left">
+								<div class="col-xs-4">
+									<ul>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Maecenas faucibus mollis interdum</span></li>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Cras justo odio, dapibus ac facilisis</span></li>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Fringilla Mattis</span></li>
+									</ul>
+								</div>
+								<div class="col-xs-4">
+									<ul>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Vestibulum id ligula porta felis euismod</span></li>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Duis mollis, est non commodo luctus</span></li>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Integer posuere</span></li>
+									</ul>
+								</div>
+								<div class="col-xs-4">
+									<ul>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Nulla vitae elit libero, a pharetra augue</span></li>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Curabitur blandit tempus porttitor</span></li>
+										<li><img src="img/home/check.png" alt="icon">
+											<span>Nullam quis risus eget urna mollis</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="row" style="margin-top:60px; margin-bottom: 50px;">
+						<div class="container text-center">
+							<img src="img/home/help.jpg" alt="help">
+							<div class="row">
+								<div class="container">
+									<p class="col-xs-6 col-xs-offset-3">Contact our Customer Support that is always ready to help you with any possible questions, problems or information.</p>
+								</div>
+							</div>
+							<p style="margin-top:20px;"><strong class="titles">support@wapik.com</strong></p>
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
+	</section>
+
+
+	<section>
+		<img src="img/contactUS/fblancoCU.jpg" alt="bb" class="fverdeAU">
 		<div class="container">
-			<secction class="row">
-				
-			</secction>
+			<div class="col-xs-12" style="color: #FFF; margin-top:5%;">
+				<div class="col-xs-8">
+					<h3 class="titles">Do You Like Wapik? Download it Now</h3>
+					<p class="titles">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div class="col-xs-4">
+					<button class="btnAUFv">download now! - FREE forever</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="margin-top:120px;">
+		<div class="container FinalAU">
+			<div class="col-xs-3">
+				<h4 class="titles">WAPIK</h4>
+				<p>@: hi@wapik.com</p>
+				<p>p: +62 202 555 0117</p>
+				<p>a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</p>
+			</div>
+			<div class="col-xs-3">
+				<h4 class="titles">Company</h4>
+				<ul class="menuAuInf">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">pricing</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-3">
+				<h4 class="titles">Others</h4>
+				<ul class="menuAuInf">
+					<li><a href="#">Help & Support</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+
+			</div>
+			<div class="col-xs-3">
+				<h4 class="titles">Newsletter</h4>
+				<p>Subscribe to our newsletter and get all the cool news</p>
+				<div>
+					<input type="text" placeholder="Enter Email" class="form-control" style="background: #eef1ec;">
+					<img src="img/aboutUs/send.png" alt="send" class="sendAU">
+					<img src="img/aboutUs/social.jpg" alt="social" style="margin-top:100px; float: right;">
+				</div>
+			</div>
 		</div>
 	</section>
 
