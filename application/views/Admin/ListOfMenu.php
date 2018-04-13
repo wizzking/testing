@@ -128,14 +128,14 @@
             <div class="col-xs-12">
             <div class="box">
             <div class="box-header">
-            <h3 class="box-title">Barra de Navegacion</h3>
+            <h3 class="box-title">Tabla</h3>
             </div>
             <div class="box-body">
             <table id="Exportar_a_Excel" class="table table-hover no-margin">
             <thead>
             <tr>
-            <th>Titulo</th>
-            <th>Icono</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
             </tr>
             </thead>
             <tbody id="contenido_tabla"></tbody>
@@ -158,6 +158,6 @@
     </div>
 </body>
 <script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js');?>"></script>
-<script src="<?php echo base_url('assets/js/LoadPlanAdm.js');?>"></script>
+<script src="<?php echo base_url('assets/js/LoadListAdm.js');?>"></script>
 <script src="<?php echo base_url('assets/js/SendData.js');?>"></script>
 </html>
