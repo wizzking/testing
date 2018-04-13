@@ -69,11 +69,22 @@ class Administrador extends CI_Controller
 	}
 	public function SaveGeneral() //Edit Cont
 	{
-        $txtNombre = $this->input->post("txtNombre");
+        $txtTelefono = $this->input->post("txtTelefono");
+        $txtCorreo = $this->input->post("txtCorreo");
+        $txtDireccion = $this->input->post("txtDireccion");
+
+        $txtGet = $this->input->post("txtGet");
+        $txtBest = $this->input->post("txtBest");
+        $txtMeet = $this->input->post("txtMeet");
+	    
 	    $SaveData = [
-	      "name" => $txtNombre,
-	      "status" => 1,
-	    ];
+	      "telefono" 				=> $txtTelefono,
+	      "correo"					=> $txtCorreo,
+	      "direccion" 				=> $txtDireccion,
+	      "Best_of_our_features" 	=> $txtBest,
+	      "Meet_Our_Team" 			=> $txtMeet,
+	      "Get_In_Touch_With_Us" 	=> $txtGet
+	  		];
 	    if ($this->Administradors->SaveGenerals($SaveData) == true) 
 	      echo "Exito";
 	    else

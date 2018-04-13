@@ -49,4 +49,15 @@ class Removers extends CI_Model
     else
       return false;
     }
+    public function RemoverLists($Stat)
+    {
+      $UpdateArray = array('status' => 0);
+        $this->db->where($Stat);
+        $this->db->set($UpdateArray);
+        $this->db->update('data_home_cont');  
+        if ($this->db->affected_rows() > 0)
+          return true;
+    else
+      return false;
+    }
 }

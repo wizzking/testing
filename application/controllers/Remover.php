@@ -52,4 +52,15 @@ class Remover extends CI_Controller
         else
             echo "No Removido";
 	}
+	public function RemoverList()
+	{
+		$data = $this->input->post();
+		$Stat = array(
+        		'id'	=> 	$data['id'],
+        );
+		if ($this->Removers->RemoverLists($Stat) == true)
+            echo "Removido";
+        else
+            echo "No Removido";
+	}
 }

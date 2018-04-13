@@ -98,55 +98,44 @@
 
 
             <div class="container">
-            <form id="form-create-usuario" style="padding:0px 15px;"class="form-horizontal" role="form" action="<?php base_url();?>BarraNav/SaveData" method="POST">
-            <h2>[--------------------------------------------------------------------------------------------------------------------------]</h2>
-            <p>Nuevo Seccion.</p>
-
+            <form id="form-create-usuario" style="padding:0px 15px;"class="form-horizontal" role="form" action="<?php base_url();?>SaveGeneral" method="POST">
+            
             <div class="form-group">
-            <label for="txtEdad">Nombre de seccion:</label>
-            <input type="text" class="form-control" name="txtNombre" placeholder="Seccion">
+            <label for="">Telefono</label>
+            <input type="text" class="form-control" name="txtTelefono" id="txtTelefono" placeholder="Telefono">
             </div>
 
             <div class="form-group">
-            <label for="fileEvidencia">Imagen<small>[solo formato png | jpg]</small>:</label>
-            <input type="file" class="form-control-file" name="fileEvidencia" aria-describedby="fileHelp">
+            <label for="">Correo</label>
+            <input type="text" class="form-control" name="txtCorreo" id="txtCorreo" placeholder="Correo">
             </div>
+
+            <div class="form-group">
+            <label for="">Direccion</label>
+            <input type="text" class="form-control" name="txtDireccion" id="txtDireccion" placeholder="Direccion">
+            </div>
+
+            <div class="form-group">
+            <label for="">Get In Touch With Us</label>
+            <input type="text" class="form-control" name="txtGet" id="txtGet" placeholder="Get In Touch With Us">
+            </div>
+
+            <div class="form-group">
+            <label for="">Best of our features</label>
+            <input type="text" class="form-control" name="txtBest" id="txtBest" placeholder="Best of our features">
+            </div>
+
+            <div class="form-group">
+            <label for="">Meet Our Team</label>
+            <input type="text" class="form-control" name="txtMeet" id="txtMeet" placeholder="Meet Our Team">
+            </div>
+
+
 
             <button type="submit" class="btn btn-primary btn-block" value="Registrar">Registrar</button>
 
             </form>
             </div>
-
-
-
-            <!---->
-            <div class="row">
-            <section class="content">
-            <div class="row">
-            <div class="col-xs-12">
-            <div class="box">
-            <div class="box-header">
-            <h3 class="box-title">Barra de Navegacion</h3>
-            </div>
-            <div class="box-body">
-            <table id="Exportar_a_Excel" class="table table-hover no-margin">
-            <thead>
-            <tr>
-            <th>Titulo</th>
-            <th>Icono</th>
-            </tr>
-            </thead>
-            <tbody id="contenido_tabla"></tbody>
-            </table>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-            </div>
-
-
-
 </div>
 </div>
 
@@ -156,6 +145,6 @@
     </div>
 </body>
 <script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js');?>"></script>
-<script src="<?php echo base_url('assets/js/LoadPlanAdm.js');?>"></script>
+<script src="<?php echo base_url('assets/js/LoadGeneralAdm.js');?>"></script>
 <script src="<?php echo base_url('assets/js/SendData.js');?>"></script>
 </html>

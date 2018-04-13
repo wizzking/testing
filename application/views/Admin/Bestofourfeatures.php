@@ -128,7 +128,7 @@
             <div class="col-xs-12">
             <div class="box">
             <div class="box-header">
-            <h3 class="box-title">Barra de Navegacion</h3>
+            <h3 class="box-title">Tabla</h3>
             </div>
             <div class="box-body">
             <table id="Exportar_a_Excel" class="table table-hover no-margin">
